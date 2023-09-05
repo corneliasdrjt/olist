@@ -1,4 +1,4 @@
-Olist Product Category Analysis
+# **Olist Product Category Analysis**
 
 # **Objective**
 Sebagai sebuah e-commerce, terdapat banyak kategori produk yang dijual di platform Olist. Kategori produk ini dapat dianalisis untuk mencari tahu strategi sales dan marketing yang tepat sasaran sehingga Olist dapat terus meningkatkan penjualan. Category Analysis dilakukan dengan cara menganalisa dataset Olist dengan objektif sebagai berikut:
@@ -21,9 +21,18 @@ Dari 4 table yang akan digunakan, di bawah ini merupakan gambaran relasi table t
 
 
 # **Data Checking & Solving**
-
 1. Order & Order Items Dataset
    Sebelum melakukan pengecekan data, terlebih dahulu dilakukan merge antara order dataset dan order item dataset.
+   <img width="776" alt="image" src="https://github.com/corneliasdrjt/olist/assets/136590789/f4656f90-6246-4572-beb8-5f4860d3a8ff">
+   Selanjutnya melakukan pemeriksaan apakah ada data Null pada table hasil merge
+   <img width="308" alt="image" src="https://github.com/corneliasdrjt/olist/assets/136590789/dc330e60-311d-4e5d-afb5-f1ae458beafb">
+   Data yang null ada sebanyak 775 rows atau sebesar 0.683% di mana semua data null terletak pada order_item_id, product_id, dan price. Asumsinya data null ini adalah order yang           statusnya canceled, dan karena jumlahnya sangat sedikit atau tidak signifikan dibandingkan dengan keseluruhan data, makan akan kita ignore.
 
+   Pada dataset order_new terdapat data harga yang akan diperiksa distribusi atau persebaran datanya.
+   <img width="692" alt="image" src="https://github.com/corneliasdrjt/olist/assets/136590789/319c581c-7eb5-4f37-a7e6-642aa2a1607a">
+   <img width="716" alt="image" src="https://github.com/corneliasdrjt/olist/assets/136590789/1a574f3f-5ebc-4aa7-a77b-152afb0154e2">
+   Data price memiliki distribusi normal dan outlier, namun outlier pada price ini akan dibiarkan mengingat data price bisa sangat beragam karena keberagaman produk terjual pada           platform Olist. Selain itu data harga akan mempengaruhi objective analisis kategori yang akan dilakukan.
 
+2. Product Dataset
+   Proses checking terhadap dataset dimulai dengan memeriksa apakah terdapat data Null.
 
