@@ -38,5 +38,5 @@ Dari 4 table yang akan digunakan, di bawah ini merupakan gambaran relasi table t
    Proses checking terhadap dataset dimulai dengan memeriksa apakah terdapat data Null.
 
 
-Analysis Report: 
+Analysis Report: https://medium.com/@corneliaendra95/product-category-analysis-olist-5b6443dc309c
 
